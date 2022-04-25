@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quad up</title>
+</head>
+
+<body>
+    <img src="images/sideimage.webp" class="body-img">
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-icon">
+                <img src="/images/home.png" />
+            </div>
+            <div class="navbar-icon">
+                <img src="/images/about.png" />
+            </div>
+            <div class="navbar-icon">
+                <img src="/images/contact-book.png" />
+            </div>
+            <div class="navbar-icon">
+                <img src="/images/menu.png" />
+            </div>
+        </nav>
+    </div>
+    <div class="existing-city">
+        <h1>Dholera : Non-Existing-city</h1>
+        <img src="images/dholera.jpg">
+        <p>
+            Dholera was also an ancient port-city in Gulf of Khambhat, 30 km. from Dhandhuka village of Ahmedabad
+            district. Shri Swaminarayan Mandir, Dholera is one of the six temples built by Swaminarayan.
+        </p>
+        <button onclick="showreportpanel()" class="showreport-button">Report</button>
+    </div>
+    <div class="non-existing-city">
+        <h1>Under Constructing : Existing</h1>
+        <ul>
+            <li>Ahmedabad</li>
+            <li><a href="/surat.html">Surat</a></li>
+            <li>Vadodara</li>
+            <li>Rajkot</li>
+            <li>Gandhinagar</li>
+            <li>Dahod</li>
+        </ul>
+        <button onclick="showreportpanel()" class="showreport-button">Report</button>
+    </div>
+    <div class="forms-container">
+        <div class="close" onclick="showreportpanel()">
+            close
+        </div>
+        <div class="forms">
+            <div class="suggestion-form showborder">
+                <h1>What do you think?</h1>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea placeholder="Your Suggestion"></textarea>
+                    <button type="button" class="submit-button">Submit</button>
+                </form>
+            </div>
+            <div class="suggestion-form">
+                <h1>Are you facing a problem?</h1>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea placeholder="Your Suggestion"></textarea>
+                    <button type="button" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var showpanel = false
+        var reportform = document.querySelector(".forms-container")
+        function showreportpanel() {
+            if(!showpanel){
+                reportform.style.display = 'flex'
+                showpanel = true
+            }
+            else{
+                reportform.style.display = 'none'
+                showpanel = false
+            }
+        }
+    </script>
+</body>
+
+</html>

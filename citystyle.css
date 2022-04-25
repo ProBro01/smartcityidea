@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@300;400&family=Syne+Mono&family=Ubuntu:wght@700&display=swap');
+
+body{
+    background-color: rgb(255, 238, 213);
+}
+
+.citycont{
+    display: grid;
+    grid-template-columns: 50% 48%;
+    column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.city1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cityheading{
+    font-family: "ubuntu", sans-serif;
+    color: rgb(73, 73, 221);
+}
+
+.citydesc{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cityimage{
+    border-radius: 10px;
+    width: 20em;
+}
+
+.citymap{
+    width: 100%;
+}
+
+.citydescp{
+    font-size: 1.2rem;
+    color: rgb(49, 49, 49);
+    font-family: "Lora";
+    margin-left: 10px;
+}
+
+.comment-section{
+    margin-top: 20px;
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    color: white;
+}
